@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:studyfirst210807/screen/home_screen.dart';
+import 'package:studyfirst210807/screen/more_screen.dart';
 import 'package:studyfirst210807/widget/Bottom_Bar.dart';
 
 void main() {
@@ -38,11 +39,7 @@ class _MyAppState extends State<MyApp> {
                   child: Text('save_alt'),
                 ),
               ),
-              Container(
-                child: Center(
-                  child: Text('more'),
-                ),
-              ),
+              MoreScren(),
             ],
           ),
           bottomNavigationBar: Bottom(),
