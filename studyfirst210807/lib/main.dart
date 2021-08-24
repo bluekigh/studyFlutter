@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:studyfirst210807/screen/home_screen.dart';
 import 'package:studyfirst210807/screen/more_screen.dart';
@@ -15,6 +16,7 @@ class _MyAppState extends State<MyApp> {
   //TabController controller;
   @override
   Widget build(BuildContext context) {
+    Firebase.initializeApp();
     return MaterialApp(
       title: 'bbongflix',
       theme: ThemeData(
